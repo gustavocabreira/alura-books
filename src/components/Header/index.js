@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const HeaderContainer = styled.header`
   background-color: #fff;
   display: flex;
+  padding-left: 20px;
 `
 
 function Header() {
