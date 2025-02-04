@@ -1,20 +1,10 @@
 import styled from 'styled-components'
 import { books } from './data'
+import { Title } from '../Title'
 
 const ReleasesContainer = styled.section`
   background: white;
 `
-
-const Title = styled.h2`
-  color: orange;
-  font-size: 36px;
-  text-align: center;
-  width: 100%;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 30px 0;
-`
-
 const BooksContainer = styled.section`
   display: flex;
   align-items: center;
@@ -36,11 +26,14 @@ const BookName = styled.span`
   color: #333;
 `
 
-
 function LastReleases() {
   return (
     <ReleasesContainer>
-      <Title>Últimos Lançamentos</Title>
+      <Title
+        color="#EB9B00"
+        fontSize="36px"
+        textAlign="center"
+      >Últimos Lançamentos</Title>
       <BooksContainer>
         {books.map((book) => (
           <Book>
