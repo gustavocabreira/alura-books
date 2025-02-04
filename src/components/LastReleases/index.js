@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import { books } from './data'
 import { Title } from '../Title'
+import RecommendationCard from '../RecommendationCard'
+import AngularBook from '../../images/livro2.png'
 
 const ReleasesContainer = styled.section`
   background: white;
@@ -42,6 +44,12 @@ function LastReleases() {
           </Book>
         ))}
       </BooksContainer>
+      <RecommendationCard
+        title="Talvez você se interesse por..."
+        subtitle="Angular - Starter Kit"
+        description="Aprenda Angular de forma rápida e prática!"
+        image={AngularBook}
+      />
     </ReleasesContainer>
   )
 }
