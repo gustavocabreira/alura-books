@@ -11,7 +11,6 @@ const ItemContainer = styled.ul`
 `
 
 const Item = styled.li`
-  list-style: none;
   min-width: 120px;
   height: 100%;
   padding: 0 5px;
