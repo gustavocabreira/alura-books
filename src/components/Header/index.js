@@ -1,14 +1,19 @@
-import './style.css';
 import Logo from "../Logo";
 import Navbar from "../Navbar";
+import styled from 'styled-components';
 
+const HeaderContainer = styled.header`
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+`
 
 function Header() {
   return (
-    <header className="App-header">
+    <HeaderContainer>
       <Logo></Logo>
       <Navbar></Navbar>
-    </header>
+    </HeaderContainer>
   )
 }
 
