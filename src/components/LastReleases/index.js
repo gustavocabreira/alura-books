@@ -3,7 +3,6 @@ import { books } from './data'
 
 const ReleasesContainer = styled.section`
   background: white;
-  padding-top: 1px;
 `
 
 const Title = styled.h2`
@@ -12,6 +11,8 @@ const Title = styled.h2`
   text-align: center;
   width: 100%;
   text-transform: uppercase;
+  margin: 0;
+  padding: 30px 0;
 `
 
 const BooksContainer = styled.section`
