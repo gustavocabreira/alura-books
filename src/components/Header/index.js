@@ -5,7 +5,6 @@ import styled from 'styled-components';
 const HeaderContainer = styled.header`
   background-color: #fff;
   display: flex;
-  flex-wrap: wrap;
 `
 
 function Header() {

@@ -1,34 +1,20 @@
-import './style.css';
-import profile from '../../images/perfil.svg';
-import bag from '../../images/sacola.svg';
+import Items from './Items';
+import Icons from './Icons';
+import styled from 'styled-components';
 
-const navigationItems = [
-  'CATEGORIAS',
-  'FAVORITOS',
-  'MINHA ESTANTE',
-];
-
-const icons = [
-  profile,
-  bag,
-];
+const NavbarContainer = styled.nav`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+`
 
 function Navbar() {
   return (
-    <nav className="navbar">
-      <ul className="options">
-        {navigationItems.map((item, index) => (
-          <li key={index} className="option">{item}</li>
-        ))}
-      </ul>
-      <ul className="icons">
-        {icons.map((icon, index) => (
-          <li key={index} className="icon">
-            <img src={icon} alt="icon" />
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <NavbarContainer>
+      <Items></Items>
+      <Icons></Icons>
+    </NavbarContainer>
   )
 }
 
